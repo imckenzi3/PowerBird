@@ -1,0 +1,51 @@
+App As appinfo:
+    BackEnabled: =false
+    Formulas: |-
+        =//# Stores if player is jumping or not
+        isjump = false;
+           
+        //# Force (v) up and mass m.
+        v = 5;
+        m = 1;
+           
+        //# Indicates game is running
+        run = true;
+           
+        //# infinite loop
+        while (
+                
+            if isjump == False:
+        
+            if isjump :
+            //onselect
+                # calculate force (F). F = 1 / 2 * mass * velocity ^ 2.
+                F =(1 / 2)*m*(v**2)
+                   
+                # change in the y co-ordinate
+                y-= F
+                   
+                # decreasing velocity while going up and become negative while coming down
+                v = v-1
+                   
+                # object reached its maximum height
+                if v<0:
+                       
+                    # negative sign is added to counter negative velocity
+                    m =-1
+           
+                # objected reaches its original state
+                if v ==-6:
+           
+                    # making isjump equal to false 
+                    isjump = False
+          
+             
+                    # setting original values to v and m
+                    v = 5
+                    m = 1
+               
+            # creates time delay of 10ms
+            pygame.time.delay(10)
+    OnStart: =Set(PlayerY, 852)
+    StartScreen: =
+
