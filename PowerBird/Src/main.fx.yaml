@@ -4,7 +4,7 @@ main As screen:
         Height: =Parent.Height
         Image: ='flappy-bird'
         ImagePosition: =ImagePosition.Fill
-        OnSelect: =Set(myVar, 452)
+        OnSelect: =
         Width: =Parent.Width
         ZIndex: =1
 
@@ -32,6 +32,7 @@ main As screen:
 
     PlayerOnClick As timer:
         Height: =70
+        OnTimerStart: =Set(PlayerJump.Value, PlayerJump.Value-1)
         Start: =mainInput
         Width: =280
         X: =40

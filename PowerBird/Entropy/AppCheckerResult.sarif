@@ -23,9 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charOffset": 9,
+                  "charLength": 1,
+                  "charOffset": 187,
                   "snippet": {
-                    "text": ""
+                    "text": "("
                   }
                 }
               },
@@ -38,7 +39,7 @@
           ],
           "message": {
             "arguments": [
-              "Eof",
+              "ParenOpen",
               "Equ"
             ],
             "id": "issue"
@@ -48,6 +49,46 @@
           },
           "ruleId": "app-ErrExpectedFound-Ex-Fnd",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "main.PlayerJump.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "main.PlayerJump.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "myVar"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "main",
+                "type": "main.PlayerJump"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "myVar"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -94,49 +135,67 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "main.mainBackground.AccessibleLabel"
+                  "fullyQualifiedName": "main.PlayerOnClick.OnTimerStart"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "main.mainBackground.AccessibleLabel",
+                  "fullyQualifiedName": "main.PlayerOnClick.OnTimerStart",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 4,
+                  "snippet": {
+                    "text": "PlayerJump"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "OnTimerStart",
                 "module": "main",
-                "type": "main.mainBackground"
+                "type": "main.PlayerOnClick"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "Control",
+              "Ident"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
+          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
+          "ruleIndex": 0
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "main.mainBackground.TabIndex"
+                  "fullyQualifiedName": "main.PlayerOnClick.OnTimerStart"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "main.mainBackground.TabIndex",
+                  "fullyQualifiedName": "main.PlayerOnClick.OnTimerStart",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": ".Value"
+                  }
                 }
               },
               "properties": {
-                "member": "TabIndex",
+                "member": "OnTimerStart",
                 "module": "main",
-                "type": "main.mainBackground"
+                "type": "main.PlayerOnClick"
               }
             }
           ],
@@ -144,10 +203,10 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -177,7 +236,37 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.PlayerJumpValue"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.PlayerJumpValue",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "PlayerJumpValue",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
         }
       ],
       "tool": {
@@ -220,6 +309,20 @@
               }
             },
             {
+              "id": "app-ErrInvalidDot",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid use of '.'"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
               "id": "acc-AccessibleLabelNeeded",
               "messageStrings": {
                 "issue": {
@@ -237,20 +340,20 @@
               }
             },
             {
-              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+              "id": "app-UnusedVariables",
               "messageStrings": {
                 "issue": {
-                  "text": "Missing tab stop"
+                  "text": "Unused variable"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
+                  "Remove the unused variable."
                 ],
                 "level": "Medium",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             }
           ],
