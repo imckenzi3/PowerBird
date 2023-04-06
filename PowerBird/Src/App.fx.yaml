@@ -1,5 +1,6 @@
 App As appinfo:
     BackEnabled: =false
+    Formulas: =imckenzi3
     OnStart: =Set(myVar, 852)
     StartScreen: =
 
