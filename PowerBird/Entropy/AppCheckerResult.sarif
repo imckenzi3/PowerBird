@@ -55,39 +55,29 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "main.PlayerJump.Default"
+                  "fullyQualifiedName": "main.mainBackground.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "main.PlayerJump.Default",
+                  "fullyQualifiedName": "main.mainBackground.AccessibleLabel",
                   "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "myVar"
-                  }
                 }
               },
               "properties": {
-                "member": "Default",
+                "member": "AccessibleLabel",
                 "module": "main",
-                "type": "main.PlayerJump"
+                "type": "main.mainBackground"
               }
             }
           ],
           "message": {
-            "arguments": [
-              "myVar"
-            ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 1
         },
         {
@@ -95,107 +85,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "main.PlayerOnClick.Start"
+                  "fullyQualifiedName": "main.Timer2.AutoStart"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "main.PlayerOnClick.Start",
+                  "fullyQualifiedName": "main.Timer2.AutoStart",
                   "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "mainInput"
-                  }
                 }
               },
               "properties": {
-                "member": "Start",
+                "member": "AutoStart",
                 "module": "main",
-                "type": "main.PlayerOnClick"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "mainInput"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "main.PlayerOnClick.OnTimerStart"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "main.PlayerOnClick.OnTimerStart",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 4,
-                  "snippet": {
-                    "text": "PlayerJump"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnTimerStart",
-                "module": "main",
-                "type": "main.PlayerOnClick"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Control",
-              "Ident"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "main.PlayerOnClick.OnTimerStart"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "main.PlayerOnClick.OnTimerStart",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnTimerStart",
-                "module": "main",
-                "type": "main.PlayerOnClick"
+                "type": "main.Timer2"
               }
             }
           ],
@@ -203,9 +105,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrInvalidDot",
+          "ruleId": "acc-AutostartShouldBeOff",
           "ruleIndex": 2
         },
         {
@@ -236,26 +138,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.PlayerJumpValue"
+                  "fullyQualifiedName": "main.mainBackground.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.PlayerJumpValue",
+                  "fullyQualifiedName": "main.mainBackground.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "PlayerJumpValue",
-                "module": "App",
-                "type": "App"
+                "member": "TabIndex",
+                "module": "main",
+                "type": "main.mainBackground"
               }
             }
           ],
@@ -265,8 +167,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
         }
       ],
       "tool": {
@@ -292,37 +194,6 @@
               }
             },
             {
-              "id": "app-ErrInvalidName",
-              "messageStrings": {
-                "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "acc-AccessibleLabelNeeded",
               "messageStrings": {
                 "issue": {
@@ -340,20 +211,37 @@
               }
             },
             {
-              "id": "app-UnusedVariables",
+              "id": "acc-AutostartShouldBeOff",
               "messageStrings": {
                 "issue": {
-                  "text": "Unused variable"
+                  "text": "Turn off autostart"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove the unused variable."
+                  "Set autostart for video and audio to False."
                 ],
                 "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
+                "primaryCategory": "accessibility",
+                "whyFix": "Autostart of video and audio files can be distracting. Let users choose whether to play or not."
+              }
+            },
+            {
+              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing tab stop"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
               }
             }
           ],

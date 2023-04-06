@@ -4,7 +4,7 @@ main As screen:
         Height: =Parent.Height
         Image: ='flappy-bird'
         ImagePosition: =ImagePosition.Fill
-        OnSelect: =
+        OnSelect: =Timer2.Start
         Width: =Parent.Width
         ZIndex: =1
 
@@ -12,7 +12,7 @@ main As screen:
         Height: =99
         Width: =136
         X: =25
-        Y: =PlayerJump.Value
+        Y: =PlayerY
         ZIndex: =2
 
         Player As image:
@@ -23,19 +23,22 @@ main As screen:
             ZIndex: =1
 
     PlayerJump As slider:
-        Default: =myVar
+        Default: =Timer2.Duration
         Height: =956
         Layout: =Layout.Vertical
         Max: =PlayerJump.Height
         Width: =640
         ZIndex: =3
 
-    PlayerOnClick As timer:
+    Timer2 As timer:
+        AutoStart: =true
         Height: =70
-        OnTimerStart: =Set(PlayerJump.Value, PlayerJump.Value-1)
-        Start: =mainInput
+        OnTimerEnd: =Set(PlayerY, 452)
+        OnTimerStart: =
+        Repeat: =true
+        Start: =true
         Width: =280
-        X: =40
-        Y: =40
+        X: =343
+        Y: =50
         ZIndex: =4
 
