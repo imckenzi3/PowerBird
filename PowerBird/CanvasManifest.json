@@ -64,7 +64,7 @@
       "improvedtabstopbehavior": false,
       "keeprecentscreensloaded": false,
       "longlivingcache": false,
-      "namedformulas": false,
+      "namedformulas": true,
       "nativecdsexperimental": true,
       "onegrid": false,
       "optimizedforteamsmeeting": false,

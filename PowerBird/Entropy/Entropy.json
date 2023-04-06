@@ -7,11 +7,12 @@
     "mainBackground": 4,
     "Player": 7,
     "PlayerContainer": 6,
-    "PlayerJump": 12
+    "PlayerJump": 12,
+    "PlayerOnClick": 13
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/06/2023 05:47:01",
+  "HeaderLastSavedDateTimeUTC": "04/06/2023 06:11:41",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -30,9 +31,10 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "groupContainer": 2,
+    "groupContainer": 3,
     "image": 0,
-    "slider": 1
+    "slider": 1,
+    "timer": 2
   },
   "OverridablePropertiesEntry": {
     "App": {},
@@ -40,7 +42,8 @@
     "mainBackground": {},
     "Player": {},
     "PlayerContainer": {},
-    "PlayerJump": {}
+    "PlayerJump": {},
+    "PlayerOnClick": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
@@ -48,9 +51,10 @@
     "App": 0,
     "main": 0,
     "mainBackground": 0,
-    "Player": 3,
-    "PlayerContainer": 2,
-    "PlayerJump": 1
+    "Player": 4,
+    "PlayerContainer": 3,
+    "PlayerJump": 1,
+    "PlayerOnClick": 2
   },
   "ResourcesJsonIndices": {
     "Image-bird": 2,
@@ -68,7 +72,7 @@
       "timer": 1
     },
     "DeserializationLoadTime": 0.619182,
-    "ErrorCount": 0
+    "ErrorCount": 1
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
