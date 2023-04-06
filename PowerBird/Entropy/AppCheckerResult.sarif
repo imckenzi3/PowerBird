@@ -959,10 +959,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1,
+                  "charLength": 2,
                   "charOffset": 7,
                   "snippet": {
-                    "text": "T"
+                    "text": "ST"
                   }
                 }
               },
@@ -997,7 +997,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 9,
+                  "charOffset": 10,
                   "snippet": {
                     "text": "+"
                   }
@@ -1034,7 +1034,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 11,
+                  "charOffset": 12,
                   "snippet": {
                     "text": "Timer"
                   }
@@ -1071,7 +1071,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 16,
+                  "charOffset": 17,
                   "snippet": {
                     "text": "."
                   }
@@ -1108,7 +1108,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 17,
+                  "charOffset": 18,
                   "snippet": {
                     "text": "Duration"
                   }
@@ -1145,7 +1145,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 25,
+                  "charOffset": 26,
                   "snippet": {
                     "text": "/"
                   }
@@ -1182,7 +1182,7 @@
                 },
                 "region": {
                   "charLength": 4,
-                  "charOffset": 26,
+                  "charOffset": 27,
                   "snippet": {
                     "text": "1000"
                   }
@@ -1218,7 +1218,7 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charOffset": 30,
+                  "charOffset": 31,
                   "snippet": {
                     "text": ""
                   }
@@ -1257,7 +1257,7 @@
                   "charLength": 4,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "time"
+                    "text": "Time"
                   }
                 }
               },
@@ -1270,7 +1270,7 @@
           ],
           "message": {
             "arguments": [
-              "time"
+              "Time"
             ],
             "id": "issue"
           },
@@ -1295,7 +1295,7 @@
                 },
                 "region": {
                   "charLength": 4,
-                  "charOffset": 26,
+                  "charOffset": 27,
                   "snippet": {
                     "text": "1000"
                   }
@@ -1332,7 +1332,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 17,
+                  "charOffset": 18,
                   "snippet": {
                     "text": "Duration"
                   }
@@ -1369,7 +1369,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 11,
+                  "charOffset": 12,
                   "snippet": {
                     "text": "Timer"
                   }
@@ -1405,10 +1405,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1,
+                  "charLength": 2,
                   "charOffset": 7,
                   "snippet": {
-                    "text": "T"
+                    "text": "ST"
                   }
                 }
               },
