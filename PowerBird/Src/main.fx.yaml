@@ -23,7 +23,7 @@ main As screen:
             ZIndex: =1
 
     PlayerJump As slider:
-        Default: =Timer2.Duration
+        Default: =PlayerY
         Height: =956
         Layout: =Layout.Vertical
         Max: =PlayerJump.Height
@@ -32,8 +32,9 @@ main As screen:
 
     Timer2 As timer:
         AutoStart: =true
+        Duration: =1
         Height: =70
-        OnTimerEnd: =Set(PlayerY, 452)
+        OnTimerEnd: =Set(PlayerY, PlayerY-10)
         OnTimerStart: =
         Repeat: =true
         Start: =true
