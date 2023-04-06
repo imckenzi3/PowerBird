@@ -3,43 +3,70 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "Screen1": 3
+    "main": 3,
+    "mainBackground": 4,
+    "Player": 6,
+    "PlayerContainer": 5,
+    "Timer2": 9
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/06/2023 04:59:33",
+  "HeaderLastSavedDateTimeUTC": "04/06/2023 05:28:41",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
+  "LocalResourceFileNames": {
+    "bird": "b4a1d75f-30c4-4472-9913-5c741775e027.gif",
+    "flappy-bird": "59ec038a-25aa-4aed-8a0c-f52e71b09dc3.gif"
+  },
+  "LocalResourceRootPaths": {
+    "bird": "https://docserverpwaprodcca.blob.core.windows.net/1bff2e3c-dda5-43b9-96f6-e40420423dee-1/resource/1ee4d05c-e79e-429a-bb13-2943f99159a4.gif?sv=2018-03-28&sr=b&sig=zfjjygGIt6aS66cjmBqEwlQwSqAjs2Ut9rzQHR4Nq7s%3D&spr=https&se=2023-04-07T05%3A30%3A00Z&sp=r",
+    "flappy-bird": "https://docserverpwaprodcca.blob.core.windows.net/1bff2e3c-dda5-43b9-96f6-e40420423dee-1/resource/94c1ccec-04c8-4706-90e9-5e5d91f3f6ab.gif?sv=2018-03-28&sr=b&sig=UlX7HXNGl6S2CTuelm%2B9AG8VKDj56D%2BKUckbchNFIe8%3D&spr=https&se=2023-04-07T05%3A17%3A45Z&sp=r"
+  },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {},
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
+  "OrderXMLTemplate": {
+    "groupContainer": 2,
+    "image": 0,
+    "timer": 1
+  },
   "OverridablePropertiesEntry": {
     "App": {},
-    "Screen1": {}
+    "main": {},
+    "mainBackground": {},
+    "Player": {},
+    "PlayerContainer": {},
+    "Timer2": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "Screen1": 0
+    "main": 0,
+    "mainBackground": 0,
+    "Player": 2,
+    "PlayerContainer": 1,
+    "Timer2": 0
   },
-  "ResourcesJsonIndices": {},
+  "ResourcesJsonIndices": {
+    "Image-bird": 2,
+    "Image-flappy-bird": 1,
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0312794,
     "ControlCount": {
+      "image": 1,
       "screen": 1
     },
     "DeserializationLoadTime": 1.2009092,
-    "ErrorCount": 0
+    "ErrorCount": 37
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

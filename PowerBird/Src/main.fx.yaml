@@ -1,0 +1,34 @@
+main As screen:
+
+    mainBackground As image:
+        Height: =Parent.Height
+        Image: ='flappy-bird'
+        ImagePosition: =ImagePosition.Fill
+        OnSelect: =
+        Width: =Parent.Width
+        ZIndex: =1
+
+    PlayerContainer As groupContainer.manualLayoutContainer:
+        Height: =99
+        Width: =136
+        X: =X0+ (vx0/AirResist.Text)* (1-Exp(-1*AirResist.Text * T))
+        Y: =Y0-(vy0/AirResist.Text)*(1+GravityConst.Text/(AirResist.Text*vy0)) * (1-Exp(-1*AirResist.Text * T)) + GravityConst.Text * T/AirResist.Text
+        ZIndex: =2
+
+        Player As image:
+            Height: =102
+            Image: =bird
+            ImagePosition: =ImagePosition.Center
+            Width: =137
+            ZIndex: =1
+
+    Timer2 As timer:
+        Height: =70
+        OnTimerEnd: |-
+            =time 
+            T + Timer.Duration/1000
+        Width: =280
+        X: =188
+        Y: =201
+        ZIndex: =3
+

@@ -120,6 +120,6 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1"
+    "main"
   ]
 }
