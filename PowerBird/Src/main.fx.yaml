@@ -35,10 +35,10 @@ main As screen:
                     PlayerY + 15
                 )
             );
-            
             // Check for collisions between hay and bird
             If(
                 PlayerContainer.X < HayContainer.X + HayContainer.Width && PlayerContainer.X + PlayerContainer.Width > HayContainer.X && PlayerContainer.Y < HayContainer.Y + HayContainer.Height && PlayerContainer.Y + PlayerContainer.Height > HayContainer.Y,
+                //Stop Hay
                 Set(
                     HayX,
                     HayX - 0
@@ -48,6 +48,21 @@ main As screen:
                     HayX - 15
                 )
             );
+            // Check if the object has gone offscreen
+            If (
+                HayContainer.X + HayContainer.Width < 0,
+                Set(
+                    HayY,
+                    652
+                );
+                Set(
+                    HayX,
+                    700
+                );
+                
+            )
+                    // Spawn the object randomly offscreen
+            //objectRect = {x: canvas.width, y: Math.floor(Math.random() * (canvas.height - 100)), width: 50, height: 50};
         OnTimerStart: =
         Repeat: =true
         Start: =true
