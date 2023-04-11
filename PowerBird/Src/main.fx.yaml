@@ -55,7 +55,7 @@ main As screen:
                 //Stop Hay
                 Set(
                     HayX,
-                    HayX - 0
+                    HayX - 0,
                 ),
                 Set(
                     HayX,
@@ -117,4 +117,23 @@ main As screen:
         FenceObject As image:
             Image: =fence
             ZIndex: =1
+
+    GameOver As rectangle:
+        Fill: =RGBA(237, 237, 237, 0.5)
+        Height: =1136
+        Visible: =PlayerDeath
+        Width: =640
+        ZIndex: =6
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 0, 0, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =41
+        Text: ="Text"
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =7
 
