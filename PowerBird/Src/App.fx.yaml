@@ -46,19 +46,32 @@ App As appinfo:
                
             # creates time delay of 10ms
             pygame.time.delay(10)
-    OnStart: |+
+    OnStart: |
         =//Player 
-        Set(PlayerY, 852);
-        
+        Set(
+            PlayerY,
+            852
+        );
         //Hay 
-        Set(HayX, 700);
-        Set(HayY, RandBetween(150, 652));
-        
+        Set(
+            HayX,
+            700
+        );
+        Set(
+            HayY,
+            RandBetween(
+                150,
+                652
+            )
+        );
         //Fence
-        Set(FenceX, 700);
-        Set(FenceY, 810);
-        
-        
-        
+        Set(
+            FenceX,
+            700
+        );
+        Set(
+            FenceY,
+            810
+        );
     StartScreen: =
 

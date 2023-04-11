@@ -67,13 +67,22 @@ main As screen:
                 PlayerContainer.X < FenceContainer.X + FenceContainer.Width && PlayerContainer.X + PlayerContainer.Width > FenceContainer.X && PlayerContainer.Y < FenceContainer.Y + FenceContainer.Height && PlayerContainer.Y + PlayerContainer.Height > FenceContainer.Y,
                 //Stop Hay
                 Set(
-                    HayX,
-                    HayX - 0
+                    FenceX,
+                    FenceX - 0
                 ),
                 Set(
-                    HayX,
-                    HayX - RandBetween(20, 30)
+                    FenceX,
+                    FenceX - RandBetween(15, 25)
                 )
+            );
+            // Check if Fecnce has gone offscreen
+            If (
+                FenceContainer.X + FenceContainer.Width < 0,
+                Set(
+                    FenceX,
+                    700
+                );
+                
             );
             // Check if Hay has gone offscreen
             If (
