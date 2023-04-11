@@ -46,6 +46,8 @@ App As appinfo:
                
             # creates time delay of 10ms
             pygame.time.delay(10)
-    OnStart: =Set(PlayerY, 852)
+    OnStart: |-
+        =//Player Y Level
+        Set(PlayerY, 852)
     StartScreen: =
 

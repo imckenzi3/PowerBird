@@ -4,7 +4,7 @@ main As screen:
         Height: =Parent.Height
         Image: ='flappy-bird'
         ImagePosition: =ImagePosition.Fill
-        OnSelect: =Timer2.Start
+        OnSelect: =Set(PlayerY, PlayerY-75)
         Width: =Parent.Width
         ZIndex: =1
 
@@ -26,7 +26,7 @@ main As screen:
         AutoStart: =true
         Duration: =1
         Height: =70
-        OnTimerEnd: =Set(PlayerY, PlayerY-10)
+        OnTimerEnd: =If(PlayerY < 852, Set(PlayerY, PlayerY+10))
         OnTimerStart: =
         Repeat: =true
         Start: =true
