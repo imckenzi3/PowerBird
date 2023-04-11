@@ -22,6 +22,19 @@ main As screen:
             Width: =137
             ZIndex: =1
 
+    HayContainer As groupContainer.manualLayoutContainer:
+        Height: =225
+        Width: =320
+        X: =HayX
+        Y: =HayY
+        ZIndex: =3
+
+        HayObject_1 As image:
+            Height: =225
+            Image: =hay
+            Width: =320
+            ZIndex: =1
+
     Timer2 As timer:
         AutoStart: =true
         Duration: =1
@@ -46,7 +59,7 @@ main As screen:
                 ),
                 Set(
                     HayX,
-                    HayX - RandBetween(15, 30)
+                    HayX - RandBetween(20, 30)
                 )
             );
             // Check if Hay has gone offscreen
@@ -54,7 +67,7 @@ main As screen:
                 HayContainer.X + HayContainer.Width < 0,
                 Set(
                     HayY,
-                    RandBetween(0, 652)
+                    RandBetween(150, 652)
                 );
                 Set(
                     HayX,
@@ -72,25 +85,14 @@ main As screen:
         Y: =50
         ZIndex: =4
 
-    HayObject As image:
-        Height: =320
-        Image: =hay
-        Visible: =false
-        Width: =320
-        X: =HayX
-        Y: =HayY
+    FenceContainer As groupContainer.manualLayoutContainer:
+        Height: =100
+        Width: =100
+        X: =540
+        Y: =810
         ZIndex: =5
 
-    HayContainer As groupContainer.manualLayoutContainer:
-        Height: =225
-        Width: =320
-        X: =HayX
-        Y: =HayY
-        ZIndex: =6
-
-        HayObject_1 As image:
-            Height: =225
-            Image: =hay
-            Width: =320
+        FenceObject As image:
+            Image: =fence
             ZIndex: =1
 

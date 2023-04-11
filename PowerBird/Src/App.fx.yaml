@@ -51,10 +51,15 @@ App As appinfo:
         Set(PlayerY, 852);
         
         //Hay 
-        Set(HayY, RandBetween(150, 652));
         Set(HayX, 700);
-        //Hay Speed
-        Set(HaySpeedX, RandBetween(15, 30);
+        Set(HayY, RandBetween(150, 652));
+        
+        
+        //Fence
+        Set(FenceX, 700);
+        Set(FenceY, 810);
+        
+        
         
     StartScreen: =
 

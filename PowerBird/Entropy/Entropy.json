@@ -3,8 +3,9 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "FenceContainer": 12,
+    "FenceObject": 13,
     "HayContainer": 10,
-    "HayObject": 9,
     "HayObject_1": 11,
     "main": 3,
     "mainBackground": 4,
@@ -14,17 +15,19 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/11/2023 02:10:02",
+  "HeaderLastSavedDateTimeUTC": "04/11/2023 02:39:54",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
     "bird": "b4a1d75f-30c4-4472-9913-5c741775e027.gif",
+    "fence": "a1993d12-16ed-41bc-9a12-16c318ea2fd5.png",
     "flappy-bird": "59ec038a-25aa-4aed-8a0c-f52e71b09dc3.gif",
     "hay": "3a82a6d3-af89-4da1-a546-eef50abd1c5b.png"
   },
   "LocalResourceRootPaths": {
     "bird": "https://docserverpwaprodcca.blob.core.windows.net/6d59b43c-6964-4cf2-be39-5583bbee2c45-1/resource/Assets0Images0b4a1d75f-30c4-4472-9913-5c741775e027.gif?sv=2018-03-28&sr=b&sig=vAo8BoMBMs8uMaAK%2FDIlFVZnJpt6YPw3M%2Bsl6cZCChY%3D&spr=https&se=2023-04-12T01%3A12%3A10Z&sp=r",
+    "fence": "https://docserverpwaprodcca.blob.core.windows.net/6d59b43c-6964-4cf2-be39-5583bbee2c45-1/resource/483e0614-db85-4ae1-8a27-9d0cbc2feb5b.png?sv=2018-03-28&sr=b&sig=BH8QEO4pEWIaH6qB1sNUCArLucdUpvIsWpB07gBioac%3D&spr=https&se=2023-04-12T02%3A48%3A25Z&sp=r",
     "flappy-bird": "https://docserverpwaprodcca.blob.core.windows.net/6d59b43c-6964-4cf2-be39-5583bbee2c45-1/resource/Assets0Images059ec038a-25aa-4aed-8a0c-f52e71b09dc3.gif?sv=2018-03-28&sr=b&sig=wJd9VNDGP71trMG0GYUDSQgIshlibX2UVBmzEHgxxYc%3D&spr=https&se=2023-04-12T01%3A12%3A10Z&sp=r",
     "hay": "https://docserverpwaprodcca.blob.core.windows.net/6d59b43c-6964-4cf2-be39-5583bbee2c45-1/resource/606dc860-5ef7-4a9d-a0c7-7155061badaf.png?sv=2018-03-28&sr=b&sig=d2vvPbpXnrnImPGmqD4Yz%2FF47QFBmtr5MjEsgsZJH8Q%3D&spr=https&se=2023-04-12T01%3A20%3A12Z&sp=r"
   },
@@ -41,8 +44,9 @@
   },
   "OverridablePropertiesEntry": {
     "App": {},
+    "FenceContainer": {},
+    "FenceObject": {},
     "HayContainer": {},
-    "HayObject": {},
     "HayObject_1": {},
     "main": {},
     "mainBackground": {},
@@ -54,17 +58,19 @@
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "HayContainer": 3,
-    "HayObject": 2,
-    "HayObject_1": 4,
+    "FenceContainer": 4,
+    "FenceObject": 5,
+    "HayContainer": 2,
+    "HayObject_1": 3,
     "main": 0,
     "mainBackground": 0,
-    "Player": 6,
-    "PlayerContainer": 5,
+    "Player": 7,
+    "PlayerContainer": 6,
     "Timer2": 1
   },
   "ResourcesJsonIndices": {
     "Image-bird": 2,
+    "Image-fence": 4,
     "Image-flappy-bird": 1,
     "Image-hay": 3,
     "Image-SampleImage": 0
@@ -81,7 +87,7 @@
       "timer": 1
     },
     "DeserializationLoadTime": 1.1838084,
-    "ErrorCount": 2
+    "ErrorCount": 1
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
