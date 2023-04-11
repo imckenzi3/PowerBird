@@ -1,4 +1,6 @@
 main As screen:
+    Height: =Max(App.Height, App.DesignHeight)
+    Width: =Max(App.Width, App.DesignWidth)
 
     mainBackground As image:
         Height: =Parent.Height
