@@ -145,17 +145,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.FenceY"
+                  "fullyQualifiedName": "App.FenceX"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.FenceY",
+                  "fullyQualifiedName": "App.FenceX",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "FenceY",
+                "member": "FenceX",
                 "module": "App",
                 "type": "App"
               }
@@ -175,17 +175,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.FenceX"
+                  "fullyQualifiedName": "App.FenceY"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.FenceX",
+                  "fullyQualifiedName": "App.FenceY",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "FenceX",
+                "member": "FenceY",
                 "module": "App",
                 "type": "App"
               }

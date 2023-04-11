@@ -54,7 +54,6 @@ App As appinfo:
         Set(HayX, 700);
         Set(HayY, RandBetween(150, 652));
         
-        
         //Fence
         Set(FenceX, 700);
         Set(FenceY, 810);
