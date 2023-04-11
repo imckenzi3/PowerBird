@@ -62,6 +62,19 @@ main As screen:
                     HayX - RandBetween(20, 30)
                 )
             );
+            // Check for collisions between fence and bird
+            If(
+                PlayerContainer.X < FenceContainer.X + FenceContainer.Width && PlayerContainer.X + PlayerContainer.Width > FenceContainer.X && PlayerContainer.Y < FenceContainer.Y + FenceContainer.Height && PlayerContainer.Y + PlayerContainer.Height > FenceContainer.Y,
+                //Stop Hay
+                Set(
+                    HayX,
+                    HayX - 0
+                ),
+                Set(
+                    HayX,
+                    HayX - RandBetween(20, 30)
+                )
+            );
             // Check if Hay has gone offscreen
             If (
                 HayContainer.X + HayContainer.Width < 0,
@@ -88,8 +101,8 @@ main As screen:
     FenceContainer As groupContainer.manualLayoutContainer:
         Height: =100
         Width: =100
-        X: =540
-        Y: =810
+        X: =FenceX
+        Y: =FenceY
         ZIndex: =5
 
         FenceObject As image:
