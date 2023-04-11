@@ -105,6 +105,7 @@
     "Id": "17be0036-5248-4730-8d28-1cf7347b2fb5",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
+    "ManualOfflineProfileId": "",
     "Name": "PowerBird",
     "OriginatingVersion": "1.330"
   },

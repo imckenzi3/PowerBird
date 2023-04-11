@@ -4,13 +4,13 @@ main As screen:
         Height: =Parent.Height
         Image: ='flappy-bird'
         ImagePosition: =ImagePosition.Fill
-        OnSelect: =Timer2.Start
+        OnSelect: =Set(PlayerY, PlayerY-75)
         Width: =Parent.Width
         ZIndex: =1
 
     PlayerContainer As groupContainer.manualLayoutContainer:
-        Height: =99
-        Width: =136
+        Height: =102
+        Width: =137
         X: =25
         Y: =PlayerY
         ZIndex: =2
@@ -22,19 +22,95 @@ main As screen:
             Width: =137
             ZIndex: =1
 
-    PlayerJump As slider:
-        Default: =PlayerY
-        Height: =956
-        Layout: =Layout.Vertical
-        Max: =PlayerJump.Height
-        Width: =640
+    HayContainer As groupContainer.manualLayoutContainer:
+        Height: =225
+        Width: =320
+        X: =HayX
+        Y: =HayY
         ZIndex: =3
+
+        HayObject_1 As image:
+            Height: =225
+            Image: =hay
+            Width: =320
+            ZIndex: =1
 
     Timer2 As timer:
         AutoStart: =true
         Duration: =1
         Height: =70
-        OnTimerEnd: =Set(PlayerY, PlayerY-10)
+        OnTimerEnd: |-
+            =// Chicken Gravity (PlayerContainer.Y Value) 
+            If(
+                PlayerY < 852,
+                Set(
+                    PlayerY,
+                    PlayerY + 15
+                )
+            );
+            // Check for collisions between hay and bird
+            If(
+                PlayerContainer.X < HayContainer.X + HayContainer.Width && PlayerContainer.X + PlayerContainer.Width > HayContainer.X && PlayerContainer.Y < HayContainer.Y + HayContainer.Height && PlayerContainer.Y + PlayerContainer.Height > HayContainer.Y,
+                //Stop Hay
+                Set(
+                    HayX,
+                    HayX - 0
+                ) && Set(
+                    PlayerDeath,
+                    true
+                ),
+                Set(
+                    HayX,
+                    HayX - RandBetween(
+                        20,
+                        30
+                    )
+                )
+            );
+            // Check for collisions between fence and bird
+            If(
+                PlayerContainer.X < FenceContainer.X + FenceContainer.Width && PlayerContainer.X + PlayerContainer.Width > FenceContainer.X && PlayerContainer.Y < FenceContainer.Y + FenceContainer.Height && PlayerContainer.Y + PlayerContainer.Height > FenceContainer.Y,
+                //Stop Hay
+                Set(
+                    FenceX,
+                    FenceX - 0
+                ) && Set(
+                    PlayerDeath,
+                    true
+                ),
+                Set(
+                    FenceX,
+                    FenceX - RandBetween(
+                        15,
+                        25
+                    )
+                )
+            );
+            // Check if Fecnce has gone offscreen
+            If (
+                FenceContainer.X + FenceContainer.Width < 0,
+                Set(
+                    FenceX,
+                    700
+                );
+                
+            );
+            // Check if Hay has gone offscreen
+            If (
+                HayContainer.X + HayContainer.Width < 0,
+                Set(
+                    HayY,
+                    RandBetween(
+                        150,
+                        652
+                    )
+                );
+                Set(
+                    HayX,
+                    700
+                );
+                
+            )
         OnTimerStart: =
         Repeat: =true
         Start: =true
@@ -42,4 +118,35 @@ main As screen:
         X: =343
         Y: =50
         ZIndex: =4
+
+    FenceContainer As groupContainer.manualLayoutContainer:
+        Height: =100
+        Width: =100
+        X: =FenceX
+        Y: =FenceY
+        ZIndex: =5
+
+        FenceObject As image:
+            Image: =fence
+            ZIndex: =1
+
+    GameOver As rectangle:
+        Fill: =RGBA(237, 237, 237, 0.5)
+        Height: =1136
+        Visible: =PlayerDeath
+        Width: =640
+        ZIndex: =6
+
+    GameOvertxt As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 0, 0, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =42
+        Text: ="GAME OVER"
+        Visible: =PlayerDeath
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =7
 

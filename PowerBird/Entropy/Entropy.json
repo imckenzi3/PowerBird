@@ -3,26 +3,35 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "FenceContainer": 12,
+    "FenceObject": 13,
+    "GameOver": 14,
+    "GameOvertxt": 15,
+    "HayContainer": 10,
+    "HayObject_1": 11,
     "main": 3,
     "mainBackground": 4,
     "Player": 8,
     "PlayerContainer": 7,
-    "PlayerJump": 5,
-    "Timer2": 10
+    "Timer2": 6
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/06/2023 06:45:53",
+  "HeaderLastSavedDateTimeUTC": "04/11/2023 02:53:56",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
     "bird": "b4a1d75f-30c4-4472-9913-5c741775e027.gif",
-    "flappy-bird": "59ec038a-25aa-4aed-8a0c-f52e71b09dc3.gif"
+    "fence": "a1993d12-16ed-41bc-9a12-16c318ea2fd5.png",
+    "flappy-bird": "59ec038a-25aa-4aed-8a0c-f52e71b09dc3.gif",
+    "hay": "3a82a6d3-af89-4da1-a546-eef50abd1c5b.png"
   },
   "LocalResourceRootPaths": {
-    "bird": "https://docserverpwaprodeca.blob.core.windows.net/504ac7c1-2aa4-4df6-a5fd-f957b9477de5-1/resource/Assets0Images0b4a1d75f-30c4-4472-9913-5c741775e027.gif?sv=2018-03-28&sr=b&sig=8NIKInB%2F4V1FlGbMXNjnAcr3wzXCMWXZEuy7oDmFOVg%3D&spr=https&se=2023-04-07T06%3A27%3A14Z&sp=r",
-    "flappy-bird": "https://docserverpwaprodeca.blob.core.windows.net/504ac7c1-2aa4-4df6-a5fd-f957b9477de5-1/resource/Assets0Images059ec038a-25aa-4aed-8a0c-f52e71b09dc3.gif?sv=2018-03-28&sr=b&sig=6uzkGu5ThqJes33fsVcRJmqhsKbinR3RtVULRuQ%2FgGA%3D&spr=https&se=2023-04-07T06%3A27%3A14Z&sp=r"
+    "bird": "https://docserverpwaprodcca.blob.core.windows.net/6d59b43c-6964-4cf2-be39-5583bbee2c45-1/resource/Assets0Images0b4a1d75f-30c4-4472-9913-5c741775e027.gif?sv=2018-03-28&sr=b&sig=vAo8BoMBMs8uMaAK%2FDIlFVZnJpt6YPw3M%2Bsl6cZCChY%3D&spr=https&se=2023-04-12T01%3A12%3A10Z&sp=r",
+    "fence": "https://docserverpwaprodcca.blob.core.windows.net/6d59b43c-6964-4cf2-be39-5583bbee2c45-1/resource/483e0614-db85-4ae1-8a27-9d0cbc2feb5b.png?sv=2018-03-28&sr=b&sig=BH8QEO4pEWIaH6qB1sNUCArLucdUpvIsWpB07gBioac%3D&spr=https&se=2023-04-12T02%3A48%3A25Z&sp=r",
+    "flappy-bird": "https://docserverpwaprodcca.blob.core.windows.net/6d59b43c-6964-4cf2-be39-5583bbee2c45-1/resource/Assets0Images059ec038a-25aa-4aed-8a0c-f52e71b09dc3.gif?sv=2018-03-28&sr=b&sig=wJd9VNDGP71trMG0GYUDSQgIshlibX2UVBmzEHgxxYc%3D&spr=https&se=2023-04-12T01%3A12%3A10Z&sp=r",
+    "hay": "https://docserverpwaprodcca.blob.core.windows.net/6d59b43c-6964-4cf2-be39-5583bbee2c45-1/resource/606dc860-5ef7-4a9d-a0c7-7155061badaf.png?sv=2018-03-28&sr=b&sig=d2vvPbpXnrnImPGmqD4Yz%2FF47QFBmtr5MjEsgsZJH8Q%3D&spr=https&se=2023-04-12T01%3A20%3A12Z&sp=r"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
@@ -31,48 +40,61 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "groupContainer": 3,
+    "groupContainer": 4,
     "image": 0,
-    "slider": 1,
-    "timer": 2
+    "label": 2,
+    "rectangle": 1,
+    "timer": 3
   },
   "OverridablePropertiesEntry": {
     "App": {},
+    "FenceContainer": {},
+    "FenceObject": {},
+    "GameOver": {},
+    "GameOvertxt": {},
+    "HayContainer": {},
+    "HayObject_1": {},
     "main": {},
     "mainBackground": {},
     "Player": {},
     "PlayerContainer": {},
-    "PlayerJump": {},
     "Timer2": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
+    "FenceContainer": 6,
+    "FenceObject": 7,
+    "GameOver": 1,
+    "GameOvertxt": 2,
+    "HayContainer": 4,
+    "HayObject_1": 5,
     "main": 0,
     "mainBackground": 0,
-    "Player": 4,
-    "PlayerContainer": 3,
-    "PlayerJump": 1,
-    "Timer2": 2
+    "Player": 9,
+    "PlayerContainer": 8,
+    "Timer2": 3
   },
   "ResourcesJsonIndices": {
     "Image-bird": 2,
+    "Image-fence": 4,
     "Image-flappy-bird": 1,
+    "Image-hay": 3,
     "Image-SampleImage": 0
   },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1011947,
+    "AnalysisLoadTime": 0.057823,
     "ControlCount": {
       "groupContainer": 1,
-      "image": 2,
+      "image": 3,
       "screen": 1,
       "slider": 1,
       "timer": 1
     },
-    "DeserializationLoadTime": 0.7251613,
+    "DeserializationLoadTime": 1.1838084,
     "ErrorCount": 1
   },
   "WasLocalDatabaseReferencesEmpty": true
