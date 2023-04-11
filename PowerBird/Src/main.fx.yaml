@@ -9,8 +9,8 @@ main As screen:
         ZIndex: =1
 
     PlayerContainer As groupContainer.manualLayoutContainer:
-        Height: =99
-        Width: =136
+        Height: =102
+        Width: =137
         X: =25
         Y: =PlayerY
         ZIndex: =2
@@ -26,7 +26,15 @@ main As screen:
         AutoStart: =true
         Duration: =1
         Height: =70
-        OnTimerEnd: =If(PlayerY < 852, Set(PlayerY, PlayerY+10))
+        OnTimerEnd: |-
+            =//Gravity 
+            If(PlayerY < 852, Set(PlayerY, PlayerY+15));
+            
+            //Hay movement
+            Set(HayX, HayX-15);
+            
+            //Chicken + Hay Collision
+            If(HayX = PlayerContainer.X + 137, PlayerContainer.Visible = false);
         OnTimerStart: =
         Repeat: =true
         Start: =true
@@ -34,4 +42,26 @@ main As screen:
         X: =343
         Y: =50
         ZIndex: =4
+
+    HayObject As image:
+        Height: =320
+        Image: =hay
+        Visible: =false
+        Width: =320
+        X: =HayX
+        Y: =HayY
+        ZIndex: =5
+
+    HayContainer As groupContainer.manualLayoutContainer:
+        Height: =225
+        Width: =320
+        X: =HayX
+        Y: =HayY
+        ZIndex: =6
+
+        HayObject_1 As image:
+            Height: =225
+            Image: =hay
+            Width: =320
+            ZIndex: =1
 
