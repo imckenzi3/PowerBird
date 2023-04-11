@@ -39,7 +39,7 @@ main As screen:
         AutoStart: =true
         Duration: =1
         Height: =70
-        OnTimerEnd: |
+        OnTimerEnd: |-
             =// Chicken Gravity (PlayerContainer.Y Value) 
             If(
                 PlayerY < 852,
@@ -48,7 +48,6 @@ main As screen:
                     PlayerY + 15
                 )
             );
-            
             // Check for collisions between hay and bird
             If(
                 PlayerContainer.X < HayContainer.X + HayContainer.Width && PlayerContainer.X + PlayerContainer.Width > HayContainer.X && PlayerContainer.Y < HayContainer.Y + HayContainer.Height && PlayerContainer.Y + PlayerContainer.Height > HayContainer.Y,
@@ -56,10 +55,16 @@ main As screen:
                 Set(
                     HayX,
                     HayX - 0
-                ) && Set(PlayerDeath, true),
+                ) && Set(
+                    PlayerDeath,
+                    true
+                ),
                 Set(
                     HayX,
-                    HayX - RandBetween(20, 30)
+                    HayX - RandBetween(
+                        20,
+                        30
+                    )
                 )
             );
             // Check for collisions between fence and bird
@@ -69,10 +74,16 @@ main As screen:
                 Set(
                     FenceX,
                     FenceX - 0
-                ) && Set(PlayerDeath, true),
+                ) && Set(
+                    PlayerDeath,
+                    true
+                ),
                 Set(
                     FenceX,
-                    FenceX - RandBetween(15, 25)
+                    FenceX - RandBetween(
+                        15,
+                        25
+                    )
                 )
             );
             // Check if Fecnce has gone offscreen
@@ -89,7 +100,10 @@ main As screen:
                 HayContainer.X + HayContainer.Width < 0,
                 Set(
                     HayY,
-                    RandBetween(150, 652)
+                    RandBetween(
+                        150,
+                        652
+                    )
                 );
                 Set(
                     HayX,
@@ -97,8 +111,6 @@ main As screen:
                 );
                 
             )
-                    // Spawn the object randomly offscreen
-            //objectRect = {x: canvas.width, y: Math.floor(Math.random() * (canvas.height - 100)), width: 50, height: 50};
         OnTimerStart: =
         Repeat: =true
         Start: =true
