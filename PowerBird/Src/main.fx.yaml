@@ -46,7 +46,7 @@ main As screen:
                 ),
                 Set(
                     HayX,
-                    HayX - 15
+                    HayX - RandBetween(15, 30)
                 )
             );
             // Check if Hay has gone offscreen

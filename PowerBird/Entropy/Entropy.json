@@ -14,7 +14,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/11/2023 02:01:05",
+  "HeaderLastSavedDateTimeUTC": "04/11/2023 02:09:23",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -81,7 +81,7 @@
       "timer": 1
     },
     "DeserializationLoadTime": 1.1838084,
-    "ErrorCount": 1
+    "ErrorCount": 2
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
