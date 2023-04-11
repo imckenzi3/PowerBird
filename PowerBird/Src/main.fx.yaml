@@ -27,7 +27,7 @@ main As screen:
         Duration: =1
         Height: =70
         OnTimerEnd: |
-            =//Gravity 
+            =// Gravity (PlayerContainer.Y Value) 
             If(
                 PlayerY < 852,
                 Set(
@@ -35,10 +35,8 @@ main As screen:
                     PlayerY + 15
                 )
             );
-            //Hay movement
-            //Set(HayX, HayX-15);
-            //If(HayX=PlayerContainer.X+PlayerContainer.Width,Set(HayX,HayX-0),Set(HayX,HayX-15));
-            // Check for collisions between two rectangles
+            
+            // Check for collisions between hay and bird
             If(
                 PlayerContainer.X < HayContainer.X + HayContainer.Width && PlayerContainer.X + PlayerContainer.Width > HayContainer.X && PlayerContainer.Y < HayContainer.Y + HayContainer.Height && PlayerContainer.Y + PlayerContainer.Height > HayContainer.Y,
                 Set(
