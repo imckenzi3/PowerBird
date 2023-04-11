@@ -76,6 +76,12 @@ App As appinfo:
         Set(
             PlayerDeath,
             false
+        );
+        
+        //Start Screen
+        Set(
+            PlayerStart,
+            false
         )
     StartScreen: =
 

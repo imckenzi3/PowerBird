@@ -3,21 +3,27 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "Button1": 19,
+    "Button1_2": 22,
     "FenceContainer": 10,
     "FenceObject": 11,
     "GameOver": 5,
+    "GameOver_1": 15,
+    "GameOverScreen": 23,
     "GameOvertxt": 6,
+    "GameOvertxt_1": 16,
     "HayContainer": 8,
     "HayObject_1": 9,
     "main": 3,
     "mainBackground": 4,
     "Player": 13,
     "PlayerContainer": 12,
+    "StartGroup": 20,
     "Timer2": 7
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/11/2023 03:16:36",
+  "HeaderLastSavedDateTimeUTC": "04/11/2023 19:18:24",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -28,19 +34,31 @@
     "hay": "3a82a6d3-af89-4da1-a546-eef50abd1c5b.png"
   },
   "LocalResourceRootPaths": {
-    "bird": "https://docserverpwaprodcca.blob.core.windows.net/b3c2de12-a479-45c0-9e4b-2b5360e7db48-1/resource/Assets0Images0b4a1d75f-30c4-4472-9913-5c741775e027.gif?sv=2018-03-28&sr=b&sig=DShotg%2BHeeu%2Bh6m7F0MmTrm%2FYXhNVa2nAMBsGleNPd8%3D&spr=https&se=2023-04-12T03%3A23%3A56Z&sp=r",
-    "fence": "https://docserverpwaprodcca.blob.core.windows.net/b3c2de12-a479-45c0-9e4b-2b5360e7db48-1/resource/Assets0Images0a1993d12-16ed-41bc-9a12-16c318ea2fd5.png?sv=2018-03-28&sr=b&sig=jt0HCL0uE8dP02sul40dbZdU4bUzSnB1LxHAYFWE2m8%3D&spr=https&se=2023-04-12T03%3A23%3A56Z&sp=r",
-    "flappy-bird": "https://docserverpwaprodcca.blob.core.windows.net/b3c2de12-a479-45c0-9e4b-2b5360e7db48-1/resource/Assets0Images059ec038a-25aa-4aed-8a0c-f52e71b09dc3.gif?sv=2018-03-28&sr=b&sig=Ert6O1FsRM%2FXF0JdIYyVboZ3%2B4xqaicxDeelBdNdBSU%3D&spr=https&se=2023-04-12T03%3A23%3A56Z&sp=r",
-    "hay": "https://docserverpwaprodcca.blob.core.windows.net/b3c2de12-a479-45c0-9e4b-2b5360e7db48-1/resource/Assets0Images03a82a6d3-af89-4da1-a546-eef50abd1c5b.png?sv=2018-03-28&sr=b&sig=4bCyFox7qxVAH8tvOCvdS04wt135BgT7k2btzbBds9I%3D&spr=https&se=2023-04-12T03%3A23%3A56Z&sp=r"
+    "bird": "https://docserverpwaprodeca.blob.core.windows.net/02f069fe-fe05-4a1f-8652-ba3e301fe9b4-1/resource/Assets0Images0b4a1d75f-30c4-4472-9913-5c741775e027.gif?sv=2018-03-28&sr=b&sig=HtpoHv7uO8Pc8zKmoTP5mJ3pp34P39KXNtRuainLCJE%3D&spr=https&se=2023-04-12T19%3A14%3A08Z&sp=r",
+    "fence": "https://docserverpwaprodeca.blob.core.windows.net/02f069fe-fe05-4a1f-8652-ba3e301fe9b4-1/resource/Assets0Images0a1993d12-16ed-41bc-9a12-16c318ea2fd5.png?sv=2018-03-28&sr=b&sig=BKrdkdCJasz6VS%2BPXZDtUGkoBY7alGGXKWjGMBaEbr4%3D&spr=https&se=2023-04-12T19%3A14%3A08Z&sp=r",
+    "flappy-bird": "https://docserverpwaprodeca.blob.core.windows.net/02f069fe-fe05-4a1f-8652-ba3e301fe9b4-1/resource/Assets0Images059ec038a-25aa-4aed-8a0c-f52e71b09dc3.gif?sv=2018-03-28&sr=b&sig=Vij5sEVVD98IaQUGJQI%2F%2FG0JdKhT4tRTGNYRVYdbWHE%3D&spr=https&se=2023-04-12T19%3A14%3A08Z&sp=r",
+    "hay": "https://docserverpwaprodeca.blob.core.windows.net/02f069fe-fe05-4a1f-8652-ba3e301fe9b4-1/resource/Assets0Images03a82a6d3-af89-4da1-a546-eef50abd1c5b.png?sv=2018-03-28&sr=b&sig=louRd8jyrcNFMutN1QxUWP23j9J78ArztuxgLD%2FGBcA%3D&spr=https&se=2023-04-12T19%3A14%3A08Z&sp=r"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {},
-  "OrderGroupControls": {},
+  "OrderGroupControls": {
+    "GameOverScreen": {
+      "Button1_2": 0,
+      "GameOver": 1,
+      "GameOvertxt": 2
+    },
+    "StartGroup": {
+      "Button1": 2,
+      "GameOver_1": 0,
+      "GameOvertxt_1": 1
+    }
+  },
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "groupContainer": 4,
+    "button": 4,
+    "groupContainer": 5,
     "image": 0,
     "label": 2,
     "rectangle": 1,
@@ -48,33 +66,45 @@
   },
   "OverridablePropertiesEntry": {
     "App": {},
+    "Button1": {},
+    "Button1_2": {},
     "FenceContainer": {},
     "FenceObject": {},
     "GameOver": {},
+    "GameOver_1": {},
+    "GameOverScreen": {},
     "GameOvertxt": {},
+    "GameOvertxt_1": {},
     "HayContainer": {},
     "HayObject_1": {},
     "main": {},
     "mainBackground": {},
     "Player": {},
     "PlayerContainer": {},
+    "StartGroup": {},
     "Timer2": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "FenceContainer": 6,
-    "FenceObject": 7,
+    "Button1": 8,
+    "Button1_2": 8,
+    "FenceContainer": 11,
+    "FenceObject": 12,
     "GameOver": 1,
-    "GameOvertxt": 2,
-    "HayContainer": 4,
-    "HayObject_1": 5,
+    "GameOver_1": 3,
+    "GameOverScreen": 0,
+    "GameOvertxt": 5,
+    "GameOvertxt_1": 6,
+    "HayContainer": 9,
+    "HayObject_1": 10,
     "main": 0,
     "mainBackground": 0,
-    "Player": 9,
-    "PlayerContainer": 8,
-    "Timer2": 3
+    "Player": 14,
+    "PlayerContainer": 13,
+    "StartGroup": 4,
+    "Timer2": 7
   },
   "ResourcesJsonIndices": {
     "Image-bird": 2,
@@ -86,16 +116,18 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0813131,
+    "AnalysisLoadTime": 0.0523849,
     "ControlCount": {
+      "button": 3,
+      "group": 1,
       "groupContainer": 3,
       "image": 4,
-      "label": 1,
-      "rectangle": 1,
+      "label": 2,
+      "rectangle": 2,
       "screen": 1,
       "timer": 1
     },
-    "DeserializationLoadTime": 1.4249477,
+    "DeserializationLoadTime": 1.5958294,
     "ErrorCount": 1
   },
   "WasLocalDatabaseReferencesEmpty": true
