@@ -26,15 +26,30 @@ main As screen:
         AutoStart: =true
         Duration: =1
         Height: =70
-        OnTimerEnd: |-
+        OnTimerEnd: |
             =//Gravity 
-            If(PlayerY < 852, Set(PlayerY, PlayerY+15));
-            
+            If(
+                PlayerY < 852,
+                Set(
+                    PlayerY,
+                    PlayerY + 15
+                )
+            );
             //Hay movement
-            Set(HayX, HayX-15);
-            
-            //Chicken + Hay Collision
-            If(HayX = PlayerContainer.X + 137, PlayerContainer.Visible = false);
+            //Set(HayX, HayX-15);
+            //If(HayX=PlayerContainer.X+PlayerContainer.Width,Set(HayX,HayX-0),Set(HayX,HayX-15));
+            // Check for collisions between two rectangles
+            If(
+                PlayerContainer.X < HayContainer.X + HayContainer.Width && PlayerContainer.X + PlayerContainer.Width > HayContainer.X && PlayerContainer.Y < HayContainer.Y + HayContainer.Height && PlayerContainer.Y + PlayerContainer.Height > HayContainer.Y,
+                Set(
+                    HayX,
+                    HayX - 0
+                ),
+                Set(
+                    HayX,
+                    HayX - 15
+                )
+            );
         OnTimerStart: =
         Repeat: =true
         Start: =true

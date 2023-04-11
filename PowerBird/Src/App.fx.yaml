@@ -46,12 +46,13 @@ App As appinfo:
                
             # creates time delay of 10ms
             pygame.time.delay(10)
-    OnStart: |-
+    OnStart: |+
         =//Player Y Level
         Set(PlayerY, 852);
         
         //Sey Hay 
         Set(HayY, 652);
         Set(HayX, 700);
+        
     StartScreen: =
 
