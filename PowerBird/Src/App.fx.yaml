@@ -51,7 +51,7 @@ App As appinfo:
         Set(PlayerY, 852);
         
         //Set Hay 
-        Set(HayY, 652);
+        Set(HayY, RandBetween(0, 652));
         Set(HayX, 700);
         
     StartScreen: =
