@@ -50,7 +50,7 @@ App As appinfo:
         =//Player Y Level
         Set(PlayerY, 852);
         
-        //Sey Hay 
+        //Set Hay 
         Set(HayY, 652);
         Set(HayX, 700);
         
