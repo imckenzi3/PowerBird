@@ -55,8 +55,8 @@ main As screen:
                 //Stop Hay
                 Set(
                     HayX,
-                    HayX - 0,
-                ),
+                    HayX - 0
+                ) && Set(PlayerDeath, true),
                 Set(
                     HayX,
                     HayX - RandBetween(20, 30)
@@ -69,7 +69,7 @@ main As screen:
                 Set(
                     FenceX,
                     FenceX - 0
-                ),
+                ) && Set(PlayerDeath, true),
                 Set(
                     FenceX,
                     FenceX - RandBetween(15, 25)
@@ -125,13 +125,14 @@ main As screen:
         Width: =640
         ZIndex: =6
 
-    Label1 As label:
+    GameOvertxt As label:
         Align: =Align.Center
         Color: =RGBA(255, 0, 0, 1)
         FontWeight: =FontWeight.Bold
         Height: =70
-        Size: =41
-        Text: ="Text"
+        Size: =42
+        Text: ="GAME OVER"
+        Visible: =PlayerDeath
         Width: =560
         X: =40
         Y: =40

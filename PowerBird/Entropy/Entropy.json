@@ -6,9 +6,9 @@
     "FenceContainer": 12,
     "FenceObject": 13,
     "GameOver": 14,
+    "GameOvertxt": 15,
     "HayContainer": 10,
     "HayObject_1": 11,
-    "Label1": 15,
     "main": 3,
     "mainBackground": 4,
     "Player": 8,
@@ -17,7 +17,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/11/2023 02:49:05",
+  "HeaderLastSavedDateTimeUTC": "04/11/2023 02:52:06",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -42,8 +42,8 @@
   "OrderXMLTemplate": {
     "groupContainer": 4,
     "image": 0,
-    "label": 1,
-    "rectangle": 2,
+    "label": 2,
+    "rectangle": 1,
     "timer": 3
   },
   "OverridablePropertiesEntry": {
@@ -51,9 +51,9 @@
     "FenceContainer": {},
     "FenceObject": {},
     "GameOver": {},
+    "GameOvertxt": {},
     "HayContainer": {},
     "HayObject_1": {},
-    "Label1": {},
     "main": {},
     "mainBackground": {},
     "Player": {},
@@ -64,17 +64,17 @@
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "FenceContainer": 5,
-    "FenceObject": 6,
+    "FenceContainer": 6,
+    "FenceObject": 7,
     "GameOver": 1,
-    "HayContainer": 3,
-    "HayObject_1": 4,
-    "Label1": 0,
+    "GameOvertxt": 2,
+    "HayContainer": 4,
+    "HayObject_1": 5,
     "main": 0,
     "mainBackground": 0,
-    "Player": 8,
-    "PlayerContainer": 7,
-    "Timer2": 2
+    "Player": 9,
+    "PlayerContainer": 8,
+    "Timer2": 3
   },
   "ResourcesJsonIndices": {
     "Image-bird": 2,
@@ -95,7 +95,7 @@
       "timer": 1
     },
     "DeserializationLoadTime": 1.1838084,
-    "ErrorCount": 4
+    "ErrorCount": 1
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
