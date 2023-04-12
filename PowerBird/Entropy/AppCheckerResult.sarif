@@ -115,19 +115,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "main.Timer2.AutoStart"
+                  "fullyQualifiedName": "App.RestartScreen"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "main.Timer2.AutoStart",
+                  "fullyQualifiedName": "App.RestartScreen",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AutoStart",
-                "module": "main",
-                "type": "main.Timer2"
+                "member": "RestartScreen",
+                "module": "App",
+                "type": "App"
               }
             }
           ],
@@ -137,7 +137,7 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AutostartShouldBeOff",
+          "ruleId": "app-UnusedVariables",
           "ruleIndex": 3
         }
       ],
@@ -198,20 +198,20 @@
               }
             },
             {
-              "id": "acc-AutostartShouldBeOff",
+              "id": "app-UnusedVariables",
               "messageStrings": {
                 "issue": {
-                  "text": "Turn off autostart"
+                  "text": "Unused variable"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Set autostart for video and audio to False."
+                  "Remove the unused variable."
                 ],
                 "level": "Medium",
-                "primaryCategory": "accessibility",
-                "whyFix": "Autostart of video and audio files can be distracting. Let users choose whether to play or not."
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             }
           ],

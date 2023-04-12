@@ -46,13 +46,13 @@ App As appinfo:
                
             # creates time delay of 10ms
             pygame.time.delay(10)
-    OnStart: |-
-        =//Player 
+    OnStart: |
+        =//Player position
         Set(
             PlayerY,
-            852
+            752
         );
-        //Hay 
+        //Hay position
         Set(
             HayX,
             700
@@ -64,7 +64,7 @@ App As appinfo:
                 652
             )
         );
-        //Fence
+        //Fence position
         Set(
             FenceX,
             700
@@ -73,8 +73,24 @@ App As appinfo:
             FenceY,
             810
         );
+        //Player dead?
         Set(
             PlayerDeath,
+            false
+        );
+        //Start Screen
+        Set(
+            StartScreen,
+            true
+        );
+        //Restart Screen
+        Set(
+            RestartScreen,
+            false
+        );
+        //Game Paused
+        Set(
+            GamePaused,
             false
         )
     StartScreen: =
