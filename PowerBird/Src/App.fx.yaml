@@ -82,6 +82,12 @@ App As appinfo:
         Set(
             PlayerStart,
             false
+        );
+        
+        //Set Conntainer
+        Set(
+            Container4Y,
+            (Container4.Height - main.Height) *(-1)
         )
     StartScreen: =
 
