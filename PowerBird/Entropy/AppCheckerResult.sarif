@@ -115,17 +115,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.PlayerDeath"
+                  "fullyQualifiedName": "App.RestartScreen"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.PlayerDeath",
+                  "fullyQualifiedName": "App.RestartScreen",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "PlayerDeath",
+                "member": "RestartScreen",
                 "module": "App",
                 "type": "App"
               }

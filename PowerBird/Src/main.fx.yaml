@@ -9,8 +9,6 @@ main As screen:
         Image: ='flappy-bird'
         ImagePosition: =ImagePosition.Fill
         OnSelect: =Set(PlayerY, PlayerY-75)
-        Transparency: |
-            =100
         Width: =Parent.Width
         ZIndex: =1
 
@@ -19,7 +17,7 @@ main As screen:
         Width: =65
         X: =25
         Y: =PlayerY
-        ZIndex: =3
+        ZIndex: =2
 
         Player As image:
             Height: =102
@@ -33,7 +31,7 @@ main As screen:
         Width: =275
         X: =HayX
         Y: =HayY
-        ZIndex: =4
+        ZIndex: =3
 
         HayObject_1 As image:
             Height: =225
@@ -46,14 +44,19 @@ main As screen:
         Width: =100
         X: =FenceX
         Y: =FenceY
-        ZIndex: =5
+        ZIndex: =4
 
         FenceObject As image:
             Image: =fence
             ZIndex: =1
 
     Timer2 As timer:
-        AutoStart: =true
+        AutoStart: |-
+            =If(
+                StartScreen = false && GamePaused = true,
+                true,
+                false
+            )
         Duration: =1
         Height: =70
         OnTimerEnd: |-
@@ -130,12 +133,12 @@ main As screen:
             )
         OnTimerStart: =
         Repeat: =true
-        Start: =PlayerStart
+        Start: =
         Visible: =false
         Width: =280
         X: =343
         Y: =50
-        ZIndex: =8
+        ZIndex: =5
 
     StartGroup As group:
         Height: =5
@@ -147,9 +150,9 @@ main As screen:
         GameOver_1 As rectangle:
             Fill: =RGBA(237, 237, 237, 0.5)
             Height: =1136
-            Visible: =false
-            Width: =Parent.Width
-            ZIndex: =9
+            Visible: =If(StartScreen = true, true, false)
+            Width: =640
+            ZIndex: =6
 
         GameOvertxt_1 As label:
             Align: =Align.Center
@@ -158,22 +161,22 @@ main As screen:
             Height: =70
             Size: =42
             Text: ="POwER BIRD"
-            Visible: =false
-            Width: =Parent.Width
-            X: =40
+            Visible: =If(StartScreen = true, true, false)
+            Width: =604
+            X: =19
             Y: =40
-            ZIndex: =10
+            ZIndex: =7
 
         Button1 As button:
             Height: =70
-            OnSelect: =Set(PlayerStart, true)
+            OnSelect: =Set(StartScreen, false) && Set(GamePaused, true)
             Size: =24
             Text: ="Start"
-            Visible: =false
-            Width: =Parent.Width
-            X: =180
+            Visible: =If(StartScreen = true, true, false)
+            Width: =500
+            X: =70
             Y: =238
-            ZIndex: =11
+            ZIndex: =8
 
     GameOverScreen As group:
         Height: =5
@@ -185,9 +188,9 @@ main As screen:
         GameOver As rectangle:
             Fill: =RGBA(237, 237, 237, 0.5)
             Height: =1136
-            Visible: =false
-            Width: =Parent.Width
-            ZIndex: =6
+            Visible: =If(PlayerDeath = true, true, false)
+            Width: =640
+            ZIndex: =9
 
         GameOvertxt As label:
             Align: =Align.Center
@@ -196,20 +199,66 @@ main As screen:
             Height: =70
             Size: =42
             Text: ="GAME OVER"
-            Visible: =false
-            Width: =Parent.Width
-            X: =40
+            Visible: =If(PlayerDeath = true, true, false)
+            Width: =531
+            X: =54
             Y: =40
-            ZIndex: =7
+            ZIndex: =10
 
         Button1_2 As button:
             Height: =70
-            OnSelect: =
+            OnSelect: |
+                =//Player position
+                Set(
+                    PlayerY,
+                    752
+                );
+                //Hay position
+                Set(
+                    HayX,
+                    700
+                );
+                Set(
+                    HayY,
+                    RandBetween(
+                        150,
+                        652
+                    )
+                );
+                //Fence position
+                Set(
+                    FenceX,
+                    700
+                );
+                Set(
+                    FenceY,
+                    810
+                );
+                //Player dead?
+                Set(
+                    PlayerDeath,
+                    false
+                );
+                //Start Screen
+                Set(
+                    StartScreen,
+                    true
+                );
+                //Restart Screen
+                Set(
+                    RestartScreen,
+                    false
+                );
+                //Game Paused
+                Set(
+                    GamePaused,
+                    false
+                )
             Size: =24
             Text: ="Restart"
-            Visible: =false
-            Width: =Parent.Width
-            X: =180
+            Visible: =If(PlayerDeath = true, true, false)
+            Width: =531
+            X: =54
             Y: =238
-            ZIndex: =12
+            ZIndex: =11
 
