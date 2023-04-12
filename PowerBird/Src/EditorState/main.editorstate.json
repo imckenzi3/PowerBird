@@ -2454,11 +2454,12 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
+        "Visible",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "true",
-          "InvariantPropertyName": "Visible",
+          "AutoRuleBindingString": "0",
+          "InvariantPropertyName": "Transparency",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         }
@@ -2624,6 +2625,11 @@
         {
           "Category": "Design",
           "PropertyName": "Visible",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Transparency",
           "RuleProviderType": "Unknown"
         },
         {

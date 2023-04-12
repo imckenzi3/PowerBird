@@ -9,7 +9,8 @@ main As screen:
         Image: ='flappy-bird'
         ImagePosition: =ImagePosition.Fill
         OnSelect: =Set(PlayerY, PlayerY-75)
-        Visible: =false
+        Transparency: |
+            =100
         Width: =Parent.Width
         ZIndex: =1
 
