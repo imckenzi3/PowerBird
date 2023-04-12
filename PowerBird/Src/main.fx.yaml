@@ -62,7 +62,7 @@ main As screen:
         OnTimerEnd: |-
             =// Chicken Gravity (PlayerContainer.Y Value) 
             If(
-                PlayerY < 852,
+                PlayerY <= 852,
                 Set(
                     PlayerY,
                     PlayerY + 15
